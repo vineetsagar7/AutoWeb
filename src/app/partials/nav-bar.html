@@ -1,0 +1,48 @@
+<template bindable="router">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <i class="fa fa-home"></i>
+        <span>${router.title}</span>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="skeleton-navigation-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li repeat.for="row of router.navigation" class=" ${row.isActive ? 'active-bottom' : ''} ">
+          <a data-toggle="collapse" class=" header-content" data-target="#skeleton-navigation-navbar-collapse.in" href.bind="row.href">${row.title}</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right" style="padding-right:30px">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="loader" if.bind="router.isNavigating">
+          <i class="fa fa-spinner fa-spin fa-2x"></i>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--<div class="navigation">
+
+    <div class="header">
+    </div>
+
+    <div class="header-content">
+      <div class="header-top">
+      </div>
+      <div class="header-bottom">
+      </div>
+    </div>
+  </div>-->
+</template>

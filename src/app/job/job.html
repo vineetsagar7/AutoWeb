@@ -1,0 +1,26 @@
+<template>
+
+    <side-bar position.two-way="position">
+    </side-bar>
+
+    <div class="container" style="padding-left:150px; padding-top:50px">
+        
+        <basic-info if.bind="position === 0">
+        </basic-info>
+
+        <scm if.bind="position === 1">
+        </scm>
+
+        <technology if.bind="position === 2">
+        </technology>
+
+        <build if.bind="position === 3">
+        </build>
+
+        <testing if.bind="position === 4">
+        </testing>
+    </div>
+
+
+
+</template>

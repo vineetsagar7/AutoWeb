@@ -1,0 +1,12 @@
+<template>
+    <div class="sidebar" style="position:fixed; top:50px">
+        <div repeat.for="item of content">
+            <div class="sidebar-content ${position ==  $index ? 'sidebar-active arrow-left' : ''}" click.delegate="changePosition($index)">
+                ${item}
+            </div>
+        </div>
+        <div class="sidebar-content sidebar-logout">
+            logout
+        </div>
+    </div>
+</template>
