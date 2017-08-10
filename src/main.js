@@ -26,9 +26,9 @@ export async function configure(aurelia) {
     // aurelia.use.plugin(PLATFORM.moduleName('aurelia-animator-css'));
     // if the css animator is enabled, add swap-order="after" to all router-view elements
     .feature(PLATFORM.moduleName('app/partials/index'))
-    .feature(PLATFORM.moduleName('app/elements/index'))
-    .feature(PLATFORM.moduleName('app/pipeline/elements/index'))
-    .feature(PLATFORM.moduleName('app/job/pages/index'));
+    .feature(PLATFORM.moduleName('app/pages/dashboard/elements/index'))
+    .feature(PLATFORM.moduleName('app/pages/pipeline/elements/index'))
+    .feature(PLATFORM.moduleName('app/pages/job/elements/index'));
   // Anyone wanting to use HTMLImports to load views, will need to install the following plugin.
   // aurelia.use.plugin(PLATFORM.moduleName('aurelia-html-import-template-loader'));
 

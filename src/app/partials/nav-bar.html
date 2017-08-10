@@ -1,5 +1,5 @@
 <template bindable="router">
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <!--<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse">
         <span class="sr-only">Toggle Navigation</span>
@@ -31,7 +31,32 @@
         </li>
       </ul>
     </div>
-  </nav>
+  </nav>-->
+
+
+  <div class="navigation">
+    <div class="header">
+      <div class="header-title"> Autoplied </div>
+    </div>
+    <div class="content">
+      <div class="content-top">
+      </div>
+      <div class="content-bottom">
+        <ul class="nav navbar-nav header-nav">
+          <li repeat.for="row of router.navigation" class=" ${row.isActive ? 'active-bottom' : ''} ">
+            <a data-toggle="collapse" class="header-content" data-target="#skeleton-navigation-navbar-collapse.in" href.bind="row.href">${row.title}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
 
   <!--<div class="navigation">
 

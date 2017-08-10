@@ -1,0 +1,53 @@
+.icon-hammer{
+  content: url('./images/hammer.svg');
+	width: 35px;
+	height: 35px;
+	background: #558b2f;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    box-shadow: 2px 2px 2px #888888;
+}
+.icon-hammer:hover{
+    background-color: #2e97c8;
+    width: 37px;
+	height: 37px;
+    cursor: pointer;
+    box-shadow: 6px 6px 5px #888888;
+}
+
+.icon-edit{
+  content: url('./images/edit.svg');
+	width: 35px;
+	height: 35px;
+	background: #558b2f;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50;
+    padding: 2px;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.icon-edit:hover{
+    background-color: #2e97c8;
+    cursor: pointer;
+    box-shadow: 6px 6px 5px #888888;
+}
+
+.icon-copy{
+  content: url('./images/copy.svg');
+	width: 35px;
+	height: 35px;
+	background: #558b2f;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50;
+    padding: 2px;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.icon-copy:hover{
+    background-color: #2e97c8;
+    cursor: pointer;
+    box-shadow: 6px 6px 5px #888888;
+}
