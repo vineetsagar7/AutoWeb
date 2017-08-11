@@ -7,41 +7,32 @@ export class App {
       {
         route: ['', 'welcome'],
         name: 'welcome',
-        moduleId: PLATFORM.moduleName('./app/dashboard/welcome'),
+        moduleId: PLATFORM.moduleName('./app/pages/dashboard/welcome'),
         nav: true,
         title: 'Dashboard'
       },
       {
         route: 'pipeline',
         name: 'pipeline',
-        moduleId: PLATFORM.moduleName('./app/pipeline/users'),
+        moduleId: PLATFORM.moduleName('./app/pages/pipeline/users'),
         nav: true,
         title: 'Pipeline'
       },
       {
         route: 'report',
         name: 'report',
-        moduleId: PLATFORM.moduleName( './app/report/report'),
+        moduleId: PLATFORM.moduleName('./app/pages/report/report'),
         nav: true,
         title: 'Report'
       },
       {
         route: 'job',
         name: 'job',
-        moduleId: PLATFORM.moduleName('./app/job/job'),
+        moduleId: PLATFORM.moduleName('./app/pages/job/job'),
         nav: true,
-        title: 'Job'
+        title: 'Create CI/CD'
       }
-      // {
-      //   route: 'basic',
-      //   name: 'basic',
-      //   moduleId: './app/job/job',
-      //   nav: true,
-      //   title: 'basic'
-      // },
-      //{ route: 'child-router',  name: 'child-router', moduleId: './child-router', nav: true, title: 'Child Router' }
     ]);
-
     this.router = router;
   }
 }

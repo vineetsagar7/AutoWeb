@@ -11,35 +11,11 @@
   </div>
 
   <div class="container">
-    <job-elements>
-    </job-elements>
-
-    <br/>
-
-    <job-elements>
-    </job-elements>
-
-    <br/>
-    <job-elements>
-    </job-elements>
-
-    <br/>
-
-    <job-elements>
-    </job-elements>
-
-    <br/>
-    <job-elements>
-    </job-elements>
-    <br/>
-
-    <job-elements>
-    </job-elements>
-
-    <br/>
-    <job-elements>
-    </job-elements>
-
+    <div repeat.for="CicdData of data">
+      <job-elements Cicd.bind="CicdData">
+      </job-elements>
+      <br/>
+    </div>
   </div>
 
 
