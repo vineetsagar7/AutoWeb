@@ -316,41 +316,4 @@ padding:10px;
   padding-left:30px;
 }
 
-.sidebar{
-  width:130px;
-  position:absolute;
-  bottom:0px;
-  height: 100%;
-  background-color: #22242e;
-  z-index: 1;
-}
-
-.sidebar-content{
-  color: white;
-  width:130px;
-  height: 50px;
-  padding: 16px;
-  cursor: pointer;
-}
-
-.sidebar-content:hover{
-  background-color: #1b1d22;
-}
-
-.sidebar-active{
-  background-color: #1b1d22;  
-}
-
-.sidebar-logout{
-  position: absolute;
-  bottom: 0px;
-}
-
-.arrow-left {
-  width: 130px; 
-  height: 0; 
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent; 
-  border-right:10px solid white; 
-}
 

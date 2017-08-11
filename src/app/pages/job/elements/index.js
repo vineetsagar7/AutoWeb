@@ -5,6 +5,7 @@ export function configure(config) {
       PLATFORM.moduleName('./scm'),
       PLATFORM.moduleName('./technology'),
       PLATFORM.moduleName('./build'),
-      PLATFORM.moduleName('./testing')
+      PLATFORM.moduleName('./testing'),
+      PLATFORM.moduleName('./sidebar')
     ]);
 }

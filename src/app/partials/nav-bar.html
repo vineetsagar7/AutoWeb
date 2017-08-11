@@ -42,14 +42,15 @@
       <div class="content-top">
       </div>
       <div class="content-bottom">
-        <ul class="nav navbar-nav header-nav">
-          <li repeat.for="row of router.navigation" class=" ${row.isActive ? 'active-bottom' : ''} ">
-            <a data-toggle="collapse" class="header-content" data-target="#skeleton-navigation-navbar-collapse.in" href.bind="row.href">${row.title}</a>
-          </li>
-        </ul>
+        <div class="navbar-content">
+          <ul>
+            <li repeat.for="row of router.navigation" class=" ${row.isActive ? 'active-bottom' : ''}" >
+              <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href.bind="row.href">${row.title}</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-
   </div>
 
 
