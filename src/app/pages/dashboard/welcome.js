@@ -11,10 +11,9 @@ export class Welcome {
 
   alerts = [
     {
-      header: "Team Announcement",
+      header: 'Team Announcement',
       class: true,
-      content:`Vineet is using deployment server (10.12.33.111). 
-               Do not use  the same till 25th july`
+      content: 'Vineet is using deployment server (10.12.33.111). Do not use  the same till 25th july'
     }
   ]
 

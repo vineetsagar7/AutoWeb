@@ -9,6 +9,9 @@ import * as Bluebird from 'bluebird';
 import { LogManager } from 'aurelia-framework';
 import { ConsoleAppender } from 'aurelia-logging-console';
 
+import Chart from 'chart.js';
+
+
 LogManager.addAppender(new ConsoleAppender());
 LogManager.setLevel(LogManager.logLevel.debug);
 
@@ -23,7 +26,10 @@ export async function configure(aurelia) {
     .router()
     .eventAggregator()
     // Uncomment the line belows to enable animation.
-    // aurelia.use.plugin(PLATFORM.moduleName('aurelia-animator-css'));
+    .plugin(PLATFORM.moduleName('aurelia-chart'))
+    .plugin(PLATFORM.moduleName('aurelia-chart/elements/chart-element'))
+    .plugin(PLATFORM.moduleName('aurelia-chart/attributes/chart-attribute'))
+
     // if the css animator is enabled, add swap-order="after" to all router-view elements
     .feature(PLATFORM.moduleName('app/partials/index'))
     .feature(PLATFORM.moduleName('app/pages/dashboard/elements/index'))

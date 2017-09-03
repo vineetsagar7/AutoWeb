@@ -202,12 +202,13 @@ padding:10px;
 .dashboard-pipeline{
   padding-bottom:10px;
   padding-right: 0px;
+  margin-top: 3%;
 }
 
 .card{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   min-height:100px;
-  width: 385px;
+  width: 100%;
   background-color: #edefef;
   border: 0px solid;
   border-radius: 2px;
@@ -215,11 +216,14 @@ padding:10px;
 
 .card  .head-default{
   background-color: #0277bd;
+  height: 40px;
+  color: white;
   width: 100%;  /* remove this to float the head content to left*/
 }
 
 .card  .head-danger{
   background-color: #ef5350;
+  color: white;
   width: 100%
 }
 
