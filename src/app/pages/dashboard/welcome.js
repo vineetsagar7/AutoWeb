@@ -4,9 +4,18 @@ export class Welcome {
   heading = 'Welcome to Autopiled Dashboard';
 
   cardContents = [
-    { header: 'Pipeline' },
-    { header: 'Code Quality' },
-    { header: 'Alerts' }
+    {
+      header: 'Pipeline',
+      type: 'bar'
+    },
+    {
+      header: 'Code Quality',
+      type: 'line'
+    },
+    {
+      header: 'Alerts',
+      type: 'line'
+    }
   ]
 
   alerts = [
@@ -19,8 +28,3 @@ export class Welcome {
 
 }
 
-export class UpperValueConverter {
-  toView(value) {
-    return value && value.toUpperCase();
-  }
-}
