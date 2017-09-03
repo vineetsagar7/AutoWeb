@@ -1,10 +1,19 @@
 <template>
+    ${card.type}
     <div class="card">
         <div class="card-header">
-            <label class="head-content ${card.class ? 'head-danger' : 'head-default'} pull-left" > ${card.header}</label>
+            <label class="head-content ${card.class ? 'head-danger' : 'head-default'} pull-left"> ${card.header}</label>
         </div>
         <div class="content card-content">
             ${card.content}
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <chart id="dynamic-pie-chart" type="bar" style="width: 30%; height: 30%; display: block;" should-update="true" throttle="2000"
+                            data.bind="DynamicDoughnutData"></chart>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
