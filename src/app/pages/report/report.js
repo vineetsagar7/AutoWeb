@@ -5,12 +5,35 @@ export class report {
   constructor() {
     this.DynamicDoughnutData = {};
     this.SimpleLineData = {};
+    this.DynamicBar = {};
+
     this.resetPieData();
     this.resetLineData();
+    this.resetBarData();
   }
 
   resetPieData() {
     this.DynamicDoughnutData = {
+      labels: ['Red', 'Green', 'Yellow'],
+      datasets: [
+        {
+          data: [300, 50, 100],
+          backgroundColor: [
+            '#FF6384',
+            '#36A2EB',
+            '#FFCE56'
+          ],
+          hoverBackgroundColor: [
+            '#FF6384',
+            '#36A2EB',
+            '#FFCE56'
+          ]
+        }]
+    };
+  }
+
+  resetBarData() {
+    this.DynamicBar = {
       labels: ['Red', 'Green', 'Yellow'],
       datasets: [
         {
